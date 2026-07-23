@@ -10,7 +10,18 @@ Each `anchors/YYYY-MM-DD.json` file records:
 - The number of receipts included
 - Links to the public receipt leaves and Ed25519 verification keys
 
-Anyone can recompute a daily root from the public leaf endpoint and compare it with GitHub's independently timestamped commit history.
+For reproducible anchors, anyone can recompute the daily root from the public leaf endpoint and compare it with GitHub's independently timestamped commit history.
+
+## Legacy anchors
+
+Two anchors predate the immutable receipt ledger. Their chained roots remain preserved, but one original leaf from each day is no longer available because its source idea was deleted before the ledger existed.
+
+| Day | Verification status | Explanation |
+| --- | --- | --- |
+| `2026-07-06` | `legacy_leaves_unavailable` | One original leaf is unavailable; the daily root cannot be independently recomputed. |
+| `2026-07-09` | `legacy_leaves_unavailable` | One original leaf is unavailable; the daily root cannot be independently recomputed. |
+
+The live [receipt anchors API](https://api.age-of-robots.com/api/receipts/anchors) exposes the same status and a machine-readable explanation. All subsequent anchors use the immutable receipt ledger and are marked `reproducible`.
 
 ## Integrity policy
 
