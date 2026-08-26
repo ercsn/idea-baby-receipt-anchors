@@ -1,0 +1,10 @@
+{
+  "schema": "idea-baby-receipt-anchor/v1",
+  "day": "2026-08-25",
+  "rootHash": "0e577b82d5657e5a558aa404e9330511a559d276574b651eb098f76aa3a94326",
+  "prevRootHash": "5f782c5947712afefa71378ec5c1fa19635f80912154e22b5462fded6fe5d5d4",
+  "ideaCount": 1,
+  "anchoredAt": "2026-08-26T01:10:22.028Z",
+  "leavesUrl": "https://api.myapp.com/api/receipts/anchors/2026-08-25/leaves",
+  "publicKeysUrl": "https://api.myapp.com/api/receipts/keys"
+}
